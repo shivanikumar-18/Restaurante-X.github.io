@@ -1,0 +1,443 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
+
+*{
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: 0.5s;
+    text-transform: capitalize;  
+}
+
+*::selection{
+    background: var(--orange);
+    color: white;
+}
+
+html{
+    font-size: 60.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body{
+    background: #f7f7f7;
+}
+
+
+section{
+    padding: 2rem 9%;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0.3rem 1rem rgba(0,0,0,0.1) ;
+}
+
+.header .logo{
+   font-size: 2.5rem;
+   font-weight: bolder;
+   color: #666; 
+}
+
+.header .logo img{
+    padding-right: 1.5rem;
+    color: var(--orange);
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+    text-align: center;
+}
+
+.heading{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.heading .image{
+    flex: 1 1 40rem;
+}
+
+.heading .image img{
+    width: 100%;
+    padding: 1rem;
+    padding-top: 15rem;
+    border-radius: 10%;
+}
+
+.heading .content h1{
+    font-size: 4rem;
+    color: black;
+}
+.heading .content p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: black;
+    padding: 1rem 0;
+}
+
+.company{
+    background: rgb(245, 117, 71);
+}
+
+.company .image img{
+    border: 0px solid #333;
+    border-radius: 10%;
+    text-align: center;
+    display: table;
+    width: 50%;
+    padding: 4rem;
+    
+}
+
+
+.company .company-contant{
+    border: 5px solid #666;
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 50rem;
+    float: right;
+    padding-bottom: 2rem;
+}
+
+.company .company-contant img{
+    padding: 1.5rem;
+    content: "";
+    row-gap: 2.5rem;
+    background: #fff;
+    text-align: center;
+    margin-right: 90px;
+}
+
+
+
+
+.story{
+    background: rgb(250, 236, 238);
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    
+}
+
+.story .image{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.story .image img{
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+    vertical-align: top;
+    padding-top: 5rem;
+    
+}
+
+.story h1 {
+    font-size: 3.5rem;
+    padding-left: 10rem;
+    padding-top: 10rem;
+    
+    
+}
+
+.story .image p{
+    font-size: 1.9rem;
+    padding-left: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.story .button1 button{
+    background: rgb(248, 108, 57);
+    font-size: 2rem;
+    border-radius: 10rem;
+    color: #fff;
+    float: center;   
+}
+
+.story .contant h2{
+    font-size: 3.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.story .contant p{
+    font-size: 1.9rem;
+    padding-right: 50%;
+}
+
+.story .contant .image1 img{
+    width: 30%;
+    border-radius: 10%;
+    float: right;
+}
+
+.story .contant .button button{
+    background: rgb(248, 108, 57);
+    font-size: 2rem;
+    border-radius: 10rem;
+    color: #fff;
+}
+
+
+/** team section */
+
+.team{
+    background: #fff;
+}
+
+.team h1{
+    padding: 5rem;
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.team .para p{
+    text-align: center;
+    font-size: 1.8rem;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.team .image{
+    padding: 1rem;
+    padding-left: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team .image img{
+    width: 40%;
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+.team .row{
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.team .row h3{
+    font-size: 1.9rem;
+    padding-left: 50%;
+}
+
+.team .row span{
+    font-size: 1.9rem;
+    color: rgb(248, 108, 57);
+    padding-left: 45%;
+}
+
+.team .row p{
+    font-size: 1.7rem;
+    padding-right: 20%;
+    padding-left: 30%;
+    
+}
+
+.value{
+    background: #fff;
+}
+
+.value h1{
+   font-size: 3rem;
+   text-align: center;
+   padding-top: 5rem;
+}
+
+.value .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 3rem;
+    
+}
+
+.value .box-container .box .content{
+    flex: 1 1 25rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10%;
+    border-width: .5rem;
+    padding: 3rem;
+}
+
+.value .box-container .box  .content .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%; left: 0;
+    
+}
+
+.value .box-container.box .contant .content{
+   text-align: center;
+   background: #fff;
+   padding: 4rem; 
+}
+
+.value .box-container .box .content img{
+    text-align: center;
+    padding-left: 45rem;
+    padding-bottom: 2rem;
+}
+
+.value .box-container .box .content h2{
+    font-size: 2.5rem;
+    padding-left: 40%;
+    padding-bottom: 2rem;
+    color: #333;
+}
+
+.value  .box .content p{
+    font-size: 1.9rem;
+    padding-left: 30%;
+    padding-right: 30%;
+    color: #666;
+}
+
+.insta{
+    background: rgb(252, 221, 227);
+    padding: 5rem;
+
+}    
+
+
+.insta h1{
+    font-size: 3.5rem;
+    color: #333;
+    padding-top: 1rem;
+    font-weight: 10%;
+    padding-bottom: 3rem; 
+} 
+
+.insta .butn button{
+    color: #fff;
+    background: rgb(230, 102, 55);
+    border-radius: 3rem;
+    font-size: 2.5rem;
+    float: right;
+    padding: 1rem;
+}
+
+.insta .insta-contant .image img{
+    width: 20%;
+    border-radius: 10%;
+    column-gap: 2rem;
+}
+
+.footer{
+    background: #fff;
+    display: grid;
+    position: relative;
+    padding: 50px 50x;
+    padding-top: 10%;
+}
+
+.footer .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.footer  .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .footer-col {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.footer  p{
+    font-size: 1.7rem;
+    color: #666;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer .stars i{
+    font-size: 2.5rem;
+    color: goldenrod;
+    padding: .5rem 0;
+}
+
+.footer .footer-col h4{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+} 
+
+.footer h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #eee;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.footer .footer-col ul{
+    list-style: none;
+}
+
+.footer .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer .footer-col ul li a:hover{
+    color: #333;
+    padding-left: 8px;
+}
+
+.footer .footer-col img{
+    width: 100%;
+    border-radius: 10%;
+    margin: 0 10px 10px 0;
+}

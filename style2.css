@@ -1,0 +1,268 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
+
+*{
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: 0.5s;
+    text-transform: capitalize;  
+}
+
+*::selection{
+    background: var(--orange);
+    color: white;
+}
+
+html{
+    font-size: 60.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body{
+    background: #f7f7f7;
+}
+
+
+section{
+    padding: 2rem 9%;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0.3rem 1rem rgba(0,0,0,0.1) ;
+}
+
+.header .logo{
+   font-size: 2.5rem;
+   font-weight: bolder;
+   color: #666; 
+}
+
+.header .logo img{
+    padding-right: 1.5rem;
+    color: var(--orange);
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+    text-align: center;
+}
+
+.menu{
+    background: #fff;
+}
+
+.menu h1{
+    padding-top: 20rem;
+    font-size: 3.8rem;
+    text-align: center;
+}
+
+.menu p{
+    padding: 2rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.9rem;
+    color: #333;
+}
+
+.menu .btn button{
+    font-size: 1.9rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    background: rgb(240, 80, 22);
+}
+
+.menu .btn{
+    padding-left: 15rem;
+
+}
+
+.menu .butn{
+    column-gap: 5rem;
+    width: 80%;
+    padding-left: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.menu .butn button{
+    font-size: 1.9rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    background: #fff;
+    column-gap: 15px;
+} 
+
+.menu .box-container{
+    padding: 3rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu .box-container .box{
+    position: relative;
+    width: 100px;
+    padding: 2rem;
+}
+
+.menu .box-container .box img{
+    width: 350%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.menu .box-container .heading h2{
+    font-size: 2.9rem;
+    padding-left: 1rem;
+    padding-top: 7rem;
+}
+
+.menu .box-container .heading p{
+    font-size: 1.8rem;
+    padding-left: 1rem;
+}
+
+.menu .box-container .price{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: #0f0c0c;
+    background: #fff;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    padding: .2rem;
+}
+
+.app{
+    background: #fff;
+}
+
+.app h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.app p{
+    font-size: 1.9rem;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding: 2rem;
+}
+
+.app .image{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   padding-left: 10%; 
+}
+
+.app .image img{
+    border: 3px solid #666 ;
+    border-radius: 1rem;
+    padding: 2rem;
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+
+.footer{
+    background: #fff;
+    display: grid;
+    position: relative;
+    padding: 50px 50x;
+    padding-top: 10%;
+}
+
+.footer .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.footer  .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .footer-col {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.footer  p{
+    font-size: 1.7rem;
+    color: #666;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer .stars i{
+    font-size: 2.5rem;
+    color: goldenrod;
+    padding: .5rem 0;
+}
+
+.footer .footer-col h4{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+} 
+
+.footer h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #eee;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.footer .footer-col ul{
+    list-style: none;
+}
+
+.footer .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer .footer-col ul li a:hover{
+    color: #333;
+    padding-left: 8px;
+}
+
+.footer .footer-col img{
+    width: 100%;
+    border-radius: 10%;
+    margin: 0 10px 10px 0;
+}
+
+
+ 
